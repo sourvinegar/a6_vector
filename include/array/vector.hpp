@@ -163,6 +163,7 @@ class Vector {
         void pop_back()
         {
             sz--;
+            shrink();
         }
 
 

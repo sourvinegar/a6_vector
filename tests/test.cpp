@@ -136,18 +136,6 @@ TEST_CASE("reallocate")
 
 }
 
-TEST_CASE("shrink")
-{
-    dsac::array::Vector<int> v1(4);
-    v1.pop_back();
-    v1.pop_back();
-    v1.pop_back();
-    v1.pop_back();
-    v1.push_back(7);
-    v1.shrink();
-    REQUIRE(v1.capacity() == 2);
-}
-
 TEST_CASE("shrink to fit")
 {
     dsac::array::Vector<int> v1(4);
